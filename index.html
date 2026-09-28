@@ -122,7 +122,12 @@
   .collage { display: grid; gap: 1.5rem; margin-top: 3rem; }
 
   /* Closing strip */
-  .closing { margin-top: 6rem; max-width: 1472px; margin-inline: auto; padding-bottom: 4rem; }
+  .closing { margin-top: 6rem; max-width: 1472px; margin-inline: auto; }
+
+  /* Sign-off, bookends the hero band */
+  .signoff { margin-top: 4rem; background: var(--deep); color: var(--on-deep); padding: 5rem 0; }
+  .signoff .lead { margin: 0 0 1rem; }
+  .signoff .name { margin: 0; color: var(--on-deep-muted); font-size: 0.9375rem; }
   .closing .frame { aspect-ratio: 4 / 3; border-radius: 0; }
   .closing img { border-radius: 0; object-position: 50% 85%; }
   .closing figcaption { padding-inline: var(--gutter); max-width: calc(var(--wide) + 2 * var(--gutter)); margin-inline: auto; }
@@ -259,6 +264,13 @@
     <figcaption>Entrepreneurship meetup, SF</figcaption>
   </figure>
 </main>
+
+<footer class="signoff">
+  <div class="text">
+    <p class="lead">Thanks for stopping by and reading this far. I hope we get to meet soon, and if you ever need a good meal, I’m probably already cooking.</p>
+    <p class="name">Saleh</p>
+  </div>
+</footer>
 
 </body>
 </html>
